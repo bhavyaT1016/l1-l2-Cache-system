@@ -81,10 +81,9 @@ Part II: Two Level Cache
   configurations (one for level 1 and one for level 2 cache). Both L1 and L2 have the same block size.
   Your program should report the total number of memory reads and writes, followed by cache miss
   and hit for L1 and L2 cache. Here is the format for part 2.
-    ./second <L1 cache size><L1 associativity><L1 cache policy><L1 block size>
-    <L2 cache size><L2 associativity><L2 cache policy>trace file>
+    ./second <L1 cache size><L1 associativity><L1 cache policy><L1 block size> <L2 cache size><L2 associativity><L2 cache policy>< trace file>
     This is an example testcase for part 2.
-    $./second 32 assoc:2 fifo 4 64 assoc:16 lru trace2.txt
+    ./second 32 assoc:2 fifo 4 64 assoc:16 lru trace2.txt
     memread:3277
     memwrite:2861
     l1cachehit:6501
